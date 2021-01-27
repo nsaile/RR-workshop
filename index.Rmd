@@ -1,5 +1,5 @@
 ---
-title: "Reproducible research Workshp"
+title: "Reproducible research Workshop"
 description: |
   This is the template to submit at the end in the ARCHE plateform of UL.
 author:

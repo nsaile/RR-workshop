@@ -1,23 +1,34 @@
 ---
-title: "Reproducible research Workshop"
-description: |
-  This is the template to submit at the end in the ARCHE plateform of UL.
+title: 'Reproducible research Workshop: <Master IDEAS/ IUVTT / 3A1>'
 author:
-  - name: Your name
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+- name: John, the Problem Solver
+  affiliation: Université de Lorraine
 date: "`r Sys.Date()`"
-output: distill::distill_article
+output: ioslides_presentation
+#  word_document: default
+#  html_document: default
+#  pdf_document: default
+   
+subtitle: Introduction to scientific research module
 ---
-
-```{r, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(error = TRUE, comment = NA, warning = FALSE, errors = FALSE, message = FALSE, tidy = FALSE, cache = FALSE)
 ```
 
-# Introduction to R
 
-## on Git
+# Purpose 
+
+> The purpose of this document is to support the different activities throughout the workshop of reproducible research at ENSGSI master course. 
+At the end of the day, a pdf document with be submitted at the ARCHE plateform of the UL.
+
+
+
+
+# Agenda of the acti
+
+
+
+## Git
 
 1. According to you, what is the most useful advance og control version
 

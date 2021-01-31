@@ -8,6 +8,10 @@ output: html_document
 ---
 
 ```{r setup, include = FALSE, cache = FALSE}
+library(learnr)
+library(tidyverse)
+devtools::install_github( "ThinkR-open/prenoms")
+library(prenoms)
 knitr::opts_chunk$set(error = TRUE, comment = NA, warning = FALSE, errors = FALSE, message = FALSE, tidy = FALSE, cache = FALSE)
 ```
 

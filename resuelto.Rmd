@@ -1,0 +1,73 @@
+---
+title: "Reproducible research Workshop: <Master IDEAS/ IUVTT / 3A1>"
+author:
+   - name: John, the Problem Solver
+     affiliation: Université de Lorraine
+date: "`r Sys.Date()`"
+#abstract: |
+# Add a résumé of the document
+# <br>
+
+---
+
+
+
+
+
+  # - name: Your name
+  #   url: https://example.com/norajones
+  #   affiliation: Spacely Sprockets
+  #   affiliation_url: https://example.com/spacelysprokets
+
+#output: distill::distill_article
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Purpose 
+
+> The purpose of this document is to support the different activities throughout the workshop of reproducible research at ENSGSI master course. 
+At the end of the day, a pdf document with be submitted at the ARCHE plateform of the UL.
+
+
+
+
+# Agenda of the acti
+
+
+
+## Git
+
+1. According to you, what is the most useful advance og control version
+
+2. For you,
+
+
+## On R
+
+1.
+
+## On R markdown
+
+
+
+# On DPLRY
+
+What is are the main characteristics of  tibble?
+
+
+
+# On DPLRY package
+
+
+
+# Using Distill
+
+
+# Using Rticles
+
+
+
+learnr::run_tutorial("hello", package = "learnr")

@@ -42,11 +42,56 @@ At the end of the day, a pdf document with be submitted at the ARCHE plateform o
 ## On R markdown
 
 
+## Questions pour ggplot
 
-# On DPLRY
+1. Qu'est ce que c'est un `geom` en `ggplot` ?
 
-What is are the main characteristics of  tibble?
+est un objet géométrique utilisé pour représenter les observations. Par exemple, les nuages de points utilisent le geom_point, les boîtes à moustaches utilisent le geom_boxplot, et les graphiques avec des lignes utilisent le geom_lines.
 
+
+2. Quel `geom` utiliseriez-vous pour représenter un nuage de points ? Une boîte à moustaches ?
+
+3. Quels sont les composant éléménts qu'un graphics a besoin en `ggplot`?
+
+Data + Geom + mappings
+
+
+4. Qu’est-ce qu’un package ?
+
+
+## Tidyversr
+
+### Tibble
+
+1. Qu’est-ce qu’un tibble et quel est la principale avantage de ce format ?
+
+2. Quel est la function pour chargerun package sous r?
+
+
+### dplry
+
+1.  Expliquez avec vos mots la fonctionalité des fonctions suivantes `select(), filter() et arrage()`?. 
+
+R. 
+
+1. Quels sont les `helpers` de la fonctionne `select()`
+
+1 Pouvez-vous écrire le code pour filtrer votre prénom dans le jeu de donnes `prenoms`?
+
+R.
+
+1. Expliquez à quoi ça sert l'operateur `>=`?
+
+1. Quels sont les quatre erreurs les plus courants avec la fonction `filter`?
+
+1. Expliquez l'erreur dans le code `filter(prenoms, 10 < n < 20)`?
+
+
+1. Expliquez l'interet de l'opérateur **Pipe** `%>%`?
+
+1. Quel est le prenom le plus populaire pour masculin et feminine en 2000?
+
+1. Grafiquez la popularité de votre prenom.
 
 
 # On DPLRY package

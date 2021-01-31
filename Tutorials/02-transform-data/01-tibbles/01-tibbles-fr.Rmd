@@ -12,6 +12,8 @@ runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
+
+
 library(learnr)
 library(tidyverse)
 
@@ -43,7 +45,6 @@ En plus de `{prenoms}`, ce module utilise les [packages de base du tidyverse](ht
 Cliquez sur le bouton "Suivant" pour commencer.
 
 ## prenoms
-
 ### Charger {prenoms}
 
 Avant de commencer, apprenons-en un peu plus sur nos données. Le jeu de données `prenoms` est fourni dans le package **{prenoms}**. Le package est préinstallé pour vous. Cependant, nous n'avons pas pré-chargé **{prenoms}**, ni aucun autre package d'ailleurs.

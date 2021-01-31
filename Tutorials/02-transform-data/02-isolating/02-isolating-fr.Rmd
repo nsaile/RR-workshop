@@ -43,7 +43,7 @@ library(tidyverse)
 
 ### La popularité d'un prénom au cours du temps
 
-```{r echo = FALSE}
+```{r echo = FALSE, message = FALSE}
 prenoms <- left_join(prenoms %>% 
                         group_by(name, year, sex) %>%
                         summarise(n = sum(n)) %>%

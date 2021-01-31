@@ -42,7 +42,7 @@ pollution <- tribble(
 checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
   list(message = check_code, correct = TRUE, location = "append")
 }
-tutorial_options(exercise.timelimit = 60, exercise.checker = checker)
+tutorial_options(exercise.timelimit = 160, exercise.checker = checker)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
@@ -386,7 +386,8 @@ table4b %>%
 
 Si vous avez examiné de près vos résultats des exercices précédents, vous avez peut-être remarqué quelque chose d'étrange : la nouvelle colonne `year` contient des vecteurs de caractères. Vous pouvez le savoir car R affiche `<chr>` sous le nom de la colonne.
 
-Vous pouvez demander à R de convertir chaque nouvelle colonne en un type de données approprié en utilisant l'argument `names_ptypes` à l'appel `pivot_longer()`. Cet argument doit être renseigné sous la forme `names_ptypes = list(year = integer())`. R transformera le contenu de la colonne `year` en entiers (integer). Essayez-le dans le code ci-dessus !
+Vous pouvez demander à R de convertir chaque nouvelle colonne en un type de données approprié en utilisant las fonction `mutate` et le type de donné.
+R transformera le contenu de la colonne `year` en entiers (integer). Essayez-le dans le code ci-dessus !
 
 ```{r ex9, exercise = TRUE}
 table4b %>% 
@@ -395,7 +396,9 @@ table4b %>%
 
 ```{r ex9-solution}
 table4b %>% 
-  pivot_longer(cols = -country, names_to = "year", values_to = "population", names_ptypes = list(year = integer()))
+  pivot_longer(cols = -country, names_to = "year", values_to = "population" ) %>% 
+  mutate(year = as.integer(year))
+
 ```
 
 ```{r ex9-check}
@@ -551,7 +554,7 @@ Le ratio filles/garçons dans `prenoms` n'est pas le même en fonction du temps.
 
 ### Créer les données
 
-```{r out.width = "80%"}
+```{r out.width = "80%", echo=FALSE}
 prenoms %>%
   group_by(year, sex) %>% 
   summarise(total = sum(n)) %>% 
@@ -580,7 +583,7 @@ prenoms %>%
 
 ### Construire le graphique
 
-```{r out.width = "80%"}
+```{r out.width = "80%", echo=FALSE}
 prenoms %>%
   group_by(year, sex) %>% 
   summarise(total = sum(n)) %>% 
@@ -624,11 +627,11 @@ prenoms %>%
   summarise(total = sum(n))
 ```
 
-### But
+### Mais,
 
 Il serait plus facile de calculer le ratio garçons/filles si nous pouvions restructurer nos données dans l'objectif d'avoir le nombre total de garçons nés par an dans une colonne et le nombre total de filles nées par an dans une autre :
 
-```{r}
+```{r, echo=FALSE}
 prenoms %>%
   group_by(year, sex) %>% 
   summarise(total = sum(n)) %>% 

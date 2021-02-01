@@ -1,13 +1,13 @@
 ---
 title: "Rendu ARCHE"
-author: "Name of the Student"
+author: "Nicolas SAILÉ"
 output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, include= TRUE)
+
 library(tidyverse)
-library(prenoms)
 ```
 
 ## On R
@@ -15,19 +15,20 @@ library(prenoms)
 1. Comment creer un vecteur sous R? Faite un example. 
 
 ```{r}
-# Votre réponse
+# Avec la fonction c(), par exemple :
+# vecteur = c(1, 2, 3)
 ```
 
 2. Quelle est la fonction des crochets `[]`?
 
 ```{r}
-# Votre réponse
+# Accéder à l'un des composants d'un vecteur.
 ```
 
 3. Quelle est la fonction pour charger un package sous R?
 
 ```{r}
-# Votre réponse
+# install.packages(packageName)
 ```
 
 
@@ -36,7 +37,7 @@ library(prenoms)
 1. Qu'est ce que c'est un `geom` en `ggplot` ?
 
 ```{r}
-# Votre réponse
+# "geom" est un objet géométrique, autrement il définit un type de représentation graphique
 ```
 
 
@@ -44,19 +45,19 @@ library(prenoms)
 2. Quel `geom` utiliseriez-vous pour représenter un nuage de points ? Une boîte à moustaches ?
 
 ```{r}
-# Votre réponse
+# geom_points()
 ```
 
 
 3. Quels sont les composant éléménts qu'un graphics a besoin en `ggplot`?
 ```{r}
-# Votre réponse
+# Il faut un set de données (data), un aesthetic (aes) définissant quelles données on veut représenter (en x, en y, en couleurs, en taille...) et un objet géométrique (geom) pour définir sous quelle forme nous voulons représenter ces données.
 ```
 
 
 4. Qu’est-ce qu’un package ?
 ```{r}
-# Votre réponse
+# C'est un ensemble de fonctions que l'on peut importer, qui ne sont pour la plupart pas intégrées de base dans R pour économiser de la place. 
 ```
 
 
@@ -178,16 +179,6 @@ prenoms %>%
 
 1. Dans l'exercice pour calculer le ratio garçons/filles au cours du temps. Quel interpretation donnerez-vous à cette graphique
 
-```{r, echo=TRUE,}
-prenoms %>%
-  group_by(year, sex) %>% 
-  summarise(total = sum(n)) %>%
-  pivot_wider(names_from = sex, values_from = total) %>%
-  mutate(ratio = M / F) %>%
-  ggplot() + 
-    aes(year, ratio) +
-    geom_line()
-```
 
 
 

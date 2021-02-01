@@ -4,13 +4,16 @@ author:
 - name: John, the Problem Solver
   affiliation: Université de Lorraine
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include = FALSE, cache = FALSE}
 devtools::install_github( "ThinkR-open/prenoms")
 library(tidyverse)
 library(prenoms)
+install.packages("devtools")
 knitr::opts_chunk$set(error = TRUE, comment = NA, warning = FALSE, errors = FALSE, message = FALSE, tidy = FALSE, cache = FALSE)
 ```
 

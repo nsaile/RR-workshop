@@ -51,13 +51,16 @@ library(tidyverse)
 
 3. Quels sont les composant éléménts qu'un graphics a besoin en `ggplot`?
 ```{r}
-# Il faut un set de données (data), un aesthetic (aes) définissant quelles données on veut représenter (en x, en y, en couleurs, en taille...) et un objet géométrique (geom) pour définir sous quelle forme nous voulons représenter ces données.
+# Il faut un set de données (data), un aesthetic (aes) définissant quelles données on veut
+# représenter (en x, en y, en couleurs, en taille...) et un objet géométrique (geom) pour définir sous
+# quelle forme nous voulons représenter ces données.
 ```
 
 
 4. Qu’est-ce qu’un package ?
 ```{r}
-# C'est un ensemble de fonctions que l'on peut importer, qui ne sont pour la plupart pas intégrées de base dans R pour économiser de la place. 
+# C'est un ensemble de fonctions que l'on peut importer, qui ne sont pour la plupart pas intégrées
+# de base dans R pour économiser de la place. 
 ```
 
 
@@ -68,7 +71,8 @@ library(tidyverse)
 1. Qu’est-ce qu’un tibble et quel est la principale avantage de ce format ?
 
 ```{r}
-# Votre réponse
+# Les tibble permettent d'afficher des grandes quantités de données plus lisiblement grâce
+# au package tibble
 ```
 
 

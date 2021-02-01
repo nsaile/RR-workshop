@@ -196,25 +196,34 @@ prenoms %>%
 1. Décrire les trois critères d'un jeu de données en mode tidy data:
 
 ```{r}
-# Votre réponse
+# Un jeu de données est en tidy data si 
+# - Il y a une variable par colonne
+# - Il y a une observation (mesure) par ligne
+# - Chaque valeur est dans sa propre cellule
 ```
 
 1. Quel est l'intéret des fonctions `pivot-longer()` et `pivot-wider()` ?
 
 ```{r}
-# Votre réponse
+# pivot-longer() : passer d'un format large à un format long
+# pivot-wider() : passer d'un format long à un format large
 ```
 
 1. Dans l'utilisation de  `pivot_longer()` et `pivot_wider()`,  expliquez la signification des guillemets. 
 
 ```{r}
-# Votre réponse
+# Elle permet d'indiquer si l'on veut parler de la valeur d'une variable ou du nom
+# de cette variable. Par exemple pour la colonne intitulée "1999".
 ```
 
 
 1. Dans l'exercice pour calculer le ratio garçons/filles au cours du temps. Quel interpretation donnerez-vous à cette graphique
 
-
+```{r}
+# J'avais supprimé cette partie à cause du problème d'export pdf mais si je me 
+# souviens bien, la courbe de ratio était croissante ce qui signifie qu'il y a 
+# de plus en plus de garçons que de filles.
+```
 
 
 
